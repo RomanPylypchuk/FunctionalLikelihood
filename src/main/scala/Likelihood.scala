@@ -1,6 +1,6 @@
 import blocks._
 import cats.implicits._
-import Algebra.EventProbabilityMonoid
+import Algebra.EventProbabilitySemigroup
 
 object Likelihood {
 
