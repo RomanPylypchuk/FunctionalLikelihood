@@ -10,7 +10,7 @@ object Algebra {
     def inverse(a: Power): Power = a.copy(n = -a.n)
   }
 
-  implicit object EventProbabilityMonoid extends Semigroup[EventProbability] {
+  implicit object EventProbabilitySemigroup extends Semigroup[EventProbability] {
     def combine(x: EventProbability, y: EventProbability): EventProbability =
       EventProbability(
         x.p |+| y.p, x.g |+| y.g, x.pConj |+| y.pConj, x.gConj |+| y.gConj
